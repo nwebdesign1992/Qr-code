@@ -1,0 +1,84 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family : "Outfit";
+    src : url(Outfit.ttf);
+}
+
+
+body{
+    max-width: 375px;
+    height: 750px;
+    font-family: Outfit, san-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: hsl(212, 45%, 89%);
+    margin: 0 auto;
+}
+
+/*HTML article element */
+.main-container{
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+
+/*Html figure element*/
+.qr-code-pic{
+    margin:auto;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.qr-code-pic img{
+    width: 275px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.qr-code-pic figcaption{
+    width: 250px;
+    font-size: 125%;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin: 0 auto;
+    /*padding-left: 10px;*/
+}
+
+/*Text to scan qr code*/
+p{
+    width: 250px;
+    text-align: center;
+    margin:auto;
+    color: hsl(216, 15%, 48%);
+}
+
+
+.attribution {
+        font-size: 11px;
+        text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+
+@media( min-width : 376px){
+    body{
+        height: 900px; 
+    }
+}
+
+
